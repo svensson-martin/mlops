@@ -148,6 +148,9 @@ pin_loc <-
 
 model_board <- pins::board_url("https://raw.githubusercontent.com/svensson-martin/mlops/master/pins_r/_pins.yaml")
 
-model_board %>% 
-  vetiver::vetiver_write_plumber("penguins_model")
+# model_board %>% 
+#   vetiver::vetiver_write_plumber("penguins_model")
+# 
+# model_board %>% 
+#   vetiver::vetiver_prepare_docker("penguins_model")
 
