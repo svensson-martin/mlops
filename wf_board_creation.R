@@ -142,3 +142,12 @@ model_board %>%
   vetiver_write_plumber("penguins_model")
 model_board %>% 
   write_board_manifest()
+
+pin_loc <- 
+  pins:::github_raw("svensson-martin/mlops/master/pins-r/")
+
+model_board <- pins::board_url("https://raw.githubusercontent.com/svensson-martin/mlops/master/pins_r/_pins.yaml")
+
+model_board %>% 
+  vetiver::vetiver_write_plumber("penguins_model")
+

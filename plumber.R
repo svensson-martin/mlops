@@ -12,8 +12,9 @@ if (FALSE) {
     library(stats)
     library(workflows)
 }
-b <- board_folder(path = "pins_r")
-v <- vetiver_pin_read(b, "penguins_model", version = "20230802T073528Z-ae149")
+#b <- board_folder(path = "pins_r")
+b <- board_url("https://raw.githubusercontent.com/svensson-martin/mlops/master/pins_r/_pins.yaml")
+v <- vetiver_pin_read(b, "penguins_model")
 
 #* @plumber
 function(pr) {
